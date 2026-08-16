@@ -1,0 +1,14 @@
+/media/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/media/vid/*
+  Cache-Control: public, max-age=31536000, immutable
+  Accept-Ranges: bytes
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: interest-cohort=()
